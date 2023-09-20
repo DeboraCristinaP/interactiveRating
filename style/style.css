@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {  
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 25%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--Orange: hsl(25, 97%, 53%);
+--Font-family-primary: "Overpass", sans-serif;
+
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    max-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    color: aliceblue;
+    font-size: 15px;
+    
+
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 7rem auto;
+    background-color: var(--Dark-Blue);
+    flex-direction: column;
+    border-radius: 15px;
+    max-width: 400px;
+    
+}
+
+.star {
+    background-color: var(--Medium-Grey);
+    padding: 0.8em;
+    margin: 2em ;
+    border-radius: 50%;
+}
+
+.titulo {
+    font-family: var(--Font-family-primary);
+    font-size: 1.8em;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    margin-left: 1em;
+
+}
+
+.texto, .thank-you,
+.thank-you p {
+    font-family: var(--Font-family-primary);
+    color: var(--Light-Grey);
+    padding: 1em;
+    margin-left: 1em;
+    
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botoes {
+    background-color: var(--Medium-Grey);
+    color: var(--Light-Grey);
+    width: 3em;
+    height: 3em;
+    padding: 0.8em;
+    margin: 1em;
+    border-radius: 50px;
+    font-size: 1em;
+    
+}
+
+.botoes:hover {
+    background: var(--Orange);
+    color: var(--White);
+}
+
+.botoes:focus {
+    background: var(--Light-Grey);
+    color: var(--White);
+}
+
+#enviar, .btn-submit {
+    width: 85%;
+    padding: 0.625rem 2rem 0.5rem;
+    margin: 1.5rem ;
+    background-color: var(--Orange);
+    border-radius: 20px;
+    color: var(--White);
+    font-family: var(--Font-family-primary);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+
+#enviar:hover, .btn-submit:hover {
+    background: var(--White);
+    color: var(--Orange);
+}
+
+.thank-you {
+    text-align: center;
+  }
+  
+  .thank-you.hidden {
+    display: none;
+  }
+  
+  .thank-you h2 {
+    margin-top: 2rem;
+    color: var(--White);
+  }
+  
+  .thank-you img {
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  
+  p.gray {
+    display: inline-block;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    padding: 0.3rem 1rem 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .attribution {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  
+  .attribution a {
+    color: hsl(228, 47%, 61%);
+  }
